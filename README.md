@@ -3,6 +3,7 @@
 Pequeño proyecto en C para ordenar números usando dos pilas y un conjunto limitado de operaciones. Este proyecto está diseñado para funcionar de manera eficiente con listas de distintos tamaños.
 
 [![Push_Swap Visualizer Demo](https://img.youtube.com/vi/fENThb-kAPA/0.jpg)](https://youtu.be/fENThb-kAPA)
+![visualizer](./assets/visualizer)
 
 ## 🛠️ Instalación  
 Clona este repositorio y compila el programa:  
