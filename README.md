@@ -2,7 +2,7 @@
 
 Pequeño proyecto en C para ordenar números usando dos pilas y un conjunto limitado de operaciones. Este proyecto está diseñado para funcionar de manera eficiente con listas de distintos tamaños.
 
-![Push_swap_Visualizer](./assets/Push_Swap_Visualizer_Sample.mp4)
+![Push_swap_Visualizer](assets/Push_Swap_Visualizer_Sample.mp4)
 
 ## 🛠️ Instalación  
 Clona este repositorio y compila el programa:  
