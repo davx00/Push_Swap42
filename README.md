@@ -1,64 +1,60 @@
-# Push_Swap42
+# push_swap  
 
-Pequeño proyecto en C para ordenar números usando dos pilas y un conjunto limitado de operaciones. Este proyecto está diseñado para funcionar de manera eficiente con listas de distintos tamaños.
+Pequeño proyecto en C para ordenar números usando dos pilas y un conjunto limitado de operaciones. Este proyecto está diseñado para funcionar de manera eficiente con listas de distintos tamaños.  
 
-🛠️ Instalación
+## 🛠️ Instalación  
+Clona este repositorio y compila el programa:  
+```bash
+git clone https://github.com/tu_usuario/push_swap.git  
+cd push_swap  
+make
+```
 
-Clona este repositorio y compila el programa:
-
- git clone https://github.com/tu_usuario/push_swap.git
- cd push_swap
- make
-
-Esto generará el ejecutable push_swap.
-
-🚀 Uso
+## 🚀 Uso
 
 Ejecuta el programa pasando una lista de números como argumentos:
-
-./push_swap 4 67 3 87 23
-
+```bash
+./push_swap 4 67 3 87 23  
+```
 El programa imprimirá en pantalla la secuencia de operaciones necesarias para ordenar los números.
 
-🔧 Operaciones disponibles
+## 🔧 Operaciones disponibles
 
-El programa utiliza un conjunto de operaciones específicas para manipular las pilas:
+El programa utiliza estas operaciones para manipular las pilas:
 
-sa, sb, ss → Intercambiar los dos primeros elementos de una pila.
+sa/sb/ss: Intercambia los dos primeros elementos de la pila a/b/ambas
+pa/pb: Mueve el primer elemento de una pila a la otra
+ra/rb/rr: Rota la pila hacia arriba (el primer elemento pasa al final)
+rra/rrb/rrr: Rota la pila hacia abajo (el último elemento pasa al inicio)
 
-pa, pb → Mover el primer elemento de una pila a la otra.
+##  🏎️ Estrategia de ordenación
 
-ra, rb, rr → Rotar la pila hacia arriba.
+El algoritmo varía según el tamaño de la lista:
 
-rra, rrb, rrr → Rotar la pila hacia abajo.
+≤ 5 elementos: Algoritmo optimizado con reglas específicas
+> 5 elementos: Implementación tipo quicksort/buckets para minimizar movimientos
 
-🏎️ Estrategia de ordenación
+## 📜 Evaluación y pruebas
 
-El algoritmo implementado varía en función del número de elementos:
+Verifica la corrección:
 
-Para listas pequeñas (≤ 5 elementos), se usa un conjunto de reglas específicas.
-
-Para listas más grandes, se implementa un algoritmo basado en quicksort/buckets para minimizar el número de movimientos.
-
-📜 Evaluación y pruebas
-
-Puedes probar el programa con diferentes valores y verificar su eficiencia con un checker:
-
+```bash
 ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG
+```
+Cuenta los movimientos:
 
-También puedes contar el número de movimientos:
-
+```bash
 ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l
+```
 
-📌 Notas
 
-El programa maneja errores de entrada (números duplicados, caracteres no válidos, etc.).
+## 📌 Notas importantes
 
-Se recomienda probar con valgrind para verificar posibles fugas de memoria:
-
+Gestión de errores: Detecta números duplicados y caracteres inválidos
+Prueba de memoria:
+```bash
 valgrind --leak-check=full ./push_swap 4 67 3 87 23
+```
+#  🏗️ Autor
 
-🏗️ Autor
-
-Desarrollado por Tu Nombre.
-
+Desarrollado por despanol
