@@ -5,7 +5,7 @@ Pequeño proyecto en C para ordenar números usando dos pilas y un conjunto limi
 ## 🛠️ Instalación  
 Clona este repositorio y compila el programa:  
 ```bash
-git clone https://github.com/tu_usuario/push_swap.git  
+git clone https://github.com/davx00/Push_Swap42.git  
 cd push_swap  
 make
 ```
